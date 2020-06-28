@@ -89,7 +89,7 @@
             width: 100px;
             height: 100px;
             margin: 20px;
-            border: 2px solid;
+            border: 1px solid;
             transition: 200ms;
         }
 
@@ -125,7 +125,8 @@
             width: 60px;
             height: 10px;
             background-color: white;
-            transform: translate(20px, 45px)rotate(-45deg);            position: absolute;
+            transform: translate(20px, 45px)rotate(-45deg);
+            position: absolute;
         }
 
         .box-1:hover > .b1-2 {
@@ -145,7 +146,7 @@
             width: 100px;
             height: 100px;
             margin: 20px;
-            border: 2px solid;
+            border: 1px solid;
             transition: 200ms;
         }
 
@@ -189,7 +190,7 @@
             width: 53px;
             height: 10px;
             background-color: white;
-            transform: translate(10px, 35px) rotate(-45deg);
+            transform: translate(10px, 30px) rotate(-45deg);
             position: absolute;
         }
 
@@ -205,7 +206,7 @@
             width: 100px;
             height: 100px;
             margin: 20px;
-            border: 2px solid;
+            border: 1px solid;
             transition: 200ms;
         }
 
@@ -238,27 +239,28 @@
         }
 
         .box-3:hover > .b3-1 {
-            width: 54px;
+            width: 50px;
             height: 10px;
             background-color: white;
-            transform: translate(22px, 46px);
+            transform: translate(25px, 45px)rotate(-45deg);
             position: absolute;
         }
 
         .box-3:hover > .b3-2 {
-            width: 44px;
-            height: 10px;
+            width: 10px;
+            height: 50px;
             background-color: white;
-            transform: translate(14px, 34px) rotate(-45deg);
+            transform: translate(45px, 25px)rotate(-45deg);
             position: absolute;
         }
 
         .box-3:hover > .b3-3 {
-            width: 44px;
-            height: 10px;
-            background-color: white;
-            transform: translate(14px, 58px) rotate(45deg);
-            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: transparent;
+            border: 10px solid white;
+            border-radius: 50%;
+            transform: translate(10px, 10px);
         }
 
         .domo-div {
@@ -327,7 +329,6 @@
 
         .domo2:hover > h3 {
             right: -220px;
-
         }
 
         .domo3 {
@@ -365,12 +366,33 @@
             transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
         }
 
-        .domo3:hover > h3 {
-            right: -220px;
-
+        .domo3 > p {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left: -14px;
+            top: -14px;
+            background-color: rgb(244, 93, 93);
+            color: white;
+            font-size: 24px;
+            line-height: 100px;
+            margin: 0;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            transition: 600ms;
+            transition-timing-function: ease-in-out;
+            transition-delay: 100ms;
+            transform: translate(-100px, -100px) scale(0.5);
         }
 
+        .domo3:hover > h3 {
+            right: -220px;
+        }
 
+        .domo3:hover > p {
+            transform: translate(0, 0) scale(1);
+        }
 
     </style>
 </head>
@@ -418,6 +440,7 @@
             <div class="domo3">
                 <img src="domokitty.jpg">
                 <h3>Domo vs Kitten</h3>
+                <p>$5.99</p>
             </div>
         </div>
     </div>
